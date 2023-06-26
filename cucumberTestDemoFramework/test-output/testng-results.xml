@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="cucumber practice test" duration-ms="10687" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:06:00 IST">
+  <suite name="Default suite" duration-ms="13173" started-at="2023-06-26T12:37:24 IST" finished-at="2023-06-26T12:37:37 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Patient Registration Test" duration-ms="10687" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:06:00 IST">
+    <test name="Default test" duration-ms="13173" started-at="2023-06-26T12:37:24 IST" finished-at="2023-06-26T12:37:37 IST">
       <class name="com.practice.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="setUpClass" is-config="true" duration-ms="458" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:05:50 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="setUpClass" is-config="true" duration-ms="426" started-at="2023-06-26T12:37:24 IST" finished-at="2023-06-26T12:37:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@147a5d08]]>
+                <![CDATA[org.testng.TestRunner@3a66e67e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="10145" started-at="2023-06-26T08:05:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T08:06:00 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="2896" started-at="2023-06-26T12:37:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T12:37:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Patient can login Successfully with valid username and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Patient login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You have logged in successfully!] but found [Invalid! You need to register yourself before login!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You have logged in successfully!] but found [Invalid! You need to register yourself before login!]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.practice.stepdefs.PatientLoginStepDef.patient_should_be_logged_in_successfully_with_message(PatientLoginStepDef.java:59)
+at ✽.Patient should be logged in successfully with message "You have logged in successfully!"(file:///home/krishna/framework/framework/cucumberTestDemoFramework/src/test/resources/features/patientLogin.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="9708" started-at="2023-06-26T12:37:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T12:37:37 IST">
           <params>
             <param index="0">
               <value>
@@ -37,11 +70,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="tearDownClass" is-config="true" duration-ms="52" started-at="2023-06-26T08:06:00 IST" finished-at="2023-06-26T08:06:00 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2023-06-26T12:37:37 IST" finished-at="2023-06-26T12:37:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.practice.runner.TestRunner -->
-    </test> <!-- Patient Registration Test -->
-  </suite> <!-- cucumber practice test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

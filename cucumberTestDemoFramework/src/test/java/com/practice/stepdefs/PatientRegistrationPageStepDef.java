@@ -1,7 +1,6 @@
 package com.practice.stepdefs;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,24 +26,26 @@ public class PatientRegistrationPageStepDef {
 	private String email;
 	private String password;
 	
-	@Before
+	@Before("@Test1")
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		this.driver = new ChromeDriver();
 		this.driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		System.out.println("Before method of PatientRegistrationPageStepDef");
 	}
 	
-	@After
+	@After("@Test1")
 	public void tearDown() {
 		if (this.driver != null) {
 			this.driver.quit();
 		}
+		System.out.println("After method of PatientRegistrationPageStepDef");
 	}
 	
-	@Given("I am on the patient registration page")
-	public void i_am_on_the_patient_registration_page() {
-		this.driver.get("https://nextjs-poc-theta.vercel.app/registration");
+	@Given("I am on the patient registration page having URL {string}")
+	public void i_am_on_the_patient_registration_page(String url) {
+		this.driver.get(url);
 		this.page = new PatientRegistrationPage(this.driver);
 	}
 	
