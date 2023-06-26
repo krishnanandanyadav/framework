@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="cucumber practice test" duration-ms="6548" started-at="2023-06-24T19:31:40 IST" finished-at="2023-06-24T19:31:46 IST">
+  <suite name="cucumber practice test" duration-ms="10687" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:06:00 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Patient Registration Test" duration-ms="6548" started-at="2023-06-24T19:31:40 IST" finished-at="2023-06-24T19:31:46 IST">
+    <test name="Patient Registration Test" duration-ms="10687" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:06:00 IST">
       <class name="com.practice.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="setUpClass" is-config="true" duration-ms="489" started-at="2023-06-24T19:31:40 IST" finished-at="2023-06-24T19:31:40 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="setUpClass" is-config="true" duration-ms="458" started-at="2023-06-26T08:05:49 IST" finished-at="2023-06-26T08:05:50 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1b45c0e]]>
+                <![CDATA[org.testng.TestRunner@147a5d08]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="4466" started-at="2023-06-24T19:31:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-24T19:31:45 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Successfully register a new user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Patient registration functionality for new Patient"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="5985" started-at="2023-06-24T19:31:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-24T19:31:46 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="runScenario" duration-ms="10145" started-at="2023-06-26T08:05:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T08:06:00 IST">
           <params>
             <param index="0">
               <value>
@@ -50,56 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-primary Signup_button_arjust__SQlQE" disabled="">...</button> is not clickable at point (922, 735). Other element would receive the click: <div class="d-grid gap-2">...</div>
-  (Session info: chrome=114.0.5735.133)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '1.8.0_362'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c922f00921c0770616fe0d0f9a1de98d, clickElement {id=437CAD55BB26A84007286CF6B20AF244_element_53}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.0UHDHg}, goog:chromeOptions: {debuggerAddress: localhost:33753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33753/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (c922f00921c0770616fe0d0f9a1de98d)] -> xpath: //button[@type = 'submit' and text() = 'Submit']]
-Session ID: c922f00921c0770616fe0d0f9a1de98d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-primary Signup_button_arjust__SQlQE" disabled="">...</button> is not clickable at point (922, 735). Other element would receive the click: <div class="d-grid gap-2">...</div>
-  (Session info: chrome=114.0.5735.133)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '1.8.0_362'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c922f00921c0770616fe0d0f9a1de98d, clickElement {id=437CAD55BB26A84007286CF6B20AF244_element_53}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.0UHDHg}, goog:chromeOptions: {debuggerAddress: localhost:33753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33753/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (c922f00921c0770616fe0d0f9a1de98d)] -> xpath: //button[@type = 'submit' and text() = 'Submit']]
-Session ID: c922f00921c0770616fe0d0f9a1de98d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy26.click(Unknown Source)
-at com.practice.pages.LoginPage.clickOnSubmitButton(LoginPage.java:42)
-at com.practice.stepdefs.PatientRegistrationPageStepDef.I_clicked_on_the_Submit_login_button(PatientRegistrationPageStepDef.java:84)
-at ✽.I clicked on the Submit login button(file:///home/krishna/mPulseWorkspace/practice/src/test/resources/features/patientRegistrationpage.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="tearDownClass" is-config="true" duration-ms="41" started-at="2023-06-24T19:31:46 IST" finished-at="2023-06-24T19:31:46 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.practice.runner.TestRunner@2a40cd94]" name="tearDownClass" is-config="true" duration-ms="52" started-at="2023-06-26T08:06:00 IST" finished-at="2023-06-26T08:06:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
