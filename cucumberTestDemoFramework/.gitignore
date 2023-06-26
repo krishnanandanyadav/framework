@@ -1,0 +1,10 @@
+ScreenShots/*
+.settings/
+.classpath
+.project
+testReports/*
+downloads/*
+**/testData
+src/test/resources/unitTest.xml
+*failed_cases_rerun.xml
+/target/
