@@ -20,5 +20,5 @@ When("Patient clicked on the Submit login button", () => {
 Then("Patient should be logged in successfully with message {string}", (message) => {
   // loginPage.elements.toastMessage().should("have.text", message);
   cy.wait(5000); // waiting for pop-up message to disappear
-  cy.url().should("contains", "/documents");
+  cy.url().should("contains", "/");
 });

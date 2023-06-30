@@ -1,5 +1,5 @@
-Feature: Patient login functionality
-	as a Patient I want to login to use this application
+Feature: Patient Invalid login functionality
+	as a Patient I want to login with invalid unregistered credentials to use this application
 
 Background:
 	Given Patient is on the patient login page

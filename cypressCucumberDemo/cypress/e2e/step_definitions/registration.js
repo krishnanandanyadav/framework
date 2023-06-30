@@ -7,21 +7,21 @@ import {
   import {registrationPage} from '@pages/RegistrationPage'
   import { faker } from '@faker-js/faker';
 
-  var patientName = faker.person.fullName();
-  var patientEmail = faker.internet.email({ firstName: faker.string.alpha(), 
-    lastName: faker.string.alpha(5), provider: 'yopmail.com' });
+  // var patientName = faker.person.fullName();
+  // var patientEmail = faker.internet.email({ firstName: faker.string.alpha(), 
+  //   lastName: faker.string.alpha(5), provider: 'yopmail.com' });
 
-  var patientPhone = faker.phone.number('98########');
+  // var patientPhone = faker.phone.number('98########');
 
   Given("I am on the patient registration page", () => {
     cy.visit("/registration");
   });
 
   Given("I have entered my valid details in registration form", () => {
-    registrationPage.enterPatientName(patientName);
-    registrationPage.enterPatientPhoneNo(patientPhone);
+    registrationPage.enterPatientName("Krishna");
+    registrationPage.enterPatientPhoneNo("8956353656");
     registrationPage.enterPatientAge(45);
-    registrationPage.enterPatientEmail(patientEmail);
+    registrationPage.enterPatientEmail("krishnatest@yopmail.com");
     registrationPage.enterPatientPassword("Pass@123");
     registrationPage.selectPatientCountry("India");
   });
@@ -40,7 +40,7 @@ import {
   });
 
   Given("I have entered my email and password on login page", () => {
-    loginPage.typeUsername(patientEmail);
+    loginPage.typeUsername("krishnatest@yopmail.com");
     loginPage.typePassword("Pass@123");
   });
 
