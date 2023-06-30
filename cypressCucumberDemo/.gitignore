@@ -7,7 +7,7 @@ reports
 # allure reports
 allure-report/
 allure-results/
-jsonlogs
+jsonlogs/
 
 # Large media files
 *.mp4
@@ -17,3 +17,5 @@ jsonlogs
 *.mov
 *.wmv
 
+# screenshots
+cypress/screenshots/
