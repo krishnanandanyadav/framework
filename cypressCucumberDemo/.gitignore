@@ -1,0 +1,19 @@
+# Node artifact files
+node_modules/
+dist/
+# Cucumber Report
+reports
+
+# allure reports
+allure-report/
+allure-results/
+jsonlogs
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
